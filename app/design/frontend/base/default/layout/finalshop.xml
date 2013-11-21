@@ -1,0 +1,18 @@
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addJs">
+                <script>modalbox.js</script>
+            </action>
+            <action method="addJs">
+                <script>finalshop.js</script>
+            </action>
+        </reference>
+    </default>
+    <checkout_onepage_review translate="label">
+        <reference name="root">
+            <block type="core/template" name="checkout.onepage.review.button" as="button"
+                   template="finalshop/button.phtml"/>
+        </reference>
+    </checkout_onepage_review>
+</layout>

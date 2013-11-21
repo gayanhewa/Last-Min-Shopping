@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Magelk_Finalshop>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Adminhtml/>
+                <Mage_Checkout/>
+
+            </depends>
+        </Magelk_Finalshop>
+    </modules>
+</config>

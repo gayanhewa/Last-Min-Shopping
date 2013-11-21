@@ -1,0 +1,8 @@
+app/code/local/Magelk/Finalshop app/code/local/Magelk/Finalshop
+app/etc/modules/* app/etc/modules
+#design
+app/design/adminhtml/default/default/layout/* app/design/adminhtml/default/default/layout
+app/design/frontend/base/default/layout/* app/design/frontend/base/default/layout
+app/design/frontend/base/default/template/finalshop/* app/design/frontend/base/default/template/finalshop
+#js
+js/* js

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <catalog>
+            <children>
+                <magelk_finalshop translate="title" module="magelk_finalshop">
+                    <title>Last min. Shopping Manager</title>
+                    <action>adminhtml/product</action>
+                    <children>
+                        <magelk_charity_org>
+                            <title>Manage Products</title>
+                            <action>finalshop/product/index</action>
+                        </magelk_charity_org>
+                    </children>
+                </magelk_finalshop>
+            </children>
+        </catalog>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <catalog>
+                        <children>
+                            <magelk_finalshop>
+                                <title>Manage Products</title>
+                            </magelk_finalshop>
+                        </children>
+                    </catalog>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
