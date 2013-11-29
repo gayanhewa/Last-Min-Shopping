@@ -66,5 +66,15 @@
                 </args>
             </finalshop>
         </routers>
+
     </admin>
+    <adminhtml>
+        <layout>
+            <updates>
+                <magelk_finalshop>
+                    <file>finalshop.xml</file>
+                </magelk_finalshop>
+            </updates>
+        </layout>
+    </adminhtml>
 </config>

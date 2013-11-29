@@ -15,9 +15,10 @@ class Magelk_Finalshop_Block_Adminhtml_Product_Core_Grid extends Mage_Adminhtml_
 
         // Set some defaults for our grid
         $this->setDefaultSort('entity_id');
-        $this->setId('magelk_finalshop_prod_grid');
+        $this->setId('magelk_charity_prod_grid_2');
         $this->setDefaultDir('asc');
         $this->setSaveParametersInSession(true);
+        $this->setUseAjax(false);
     }
 
     protected function _getCollectionClass()
@@ -36,6 +37,11 @@ class Magelk_Finalshop_Block_Adminhtml_Product_Core_Grid extends Mage_Adminhtml_
         return parent::_prepareColumns();
     }
 
+    public function getRowUrl($row)
+    {
+        // This is where our row data will link to
+        return $this->getUrl('*/*/edit', array('id' => $row->getId()));
+    }
 
     //overriden mass actions
     protected function _prepareMassaction()
@@ -44,12 +50,17 @@ class Magelk_Finalshop_Block_Adminhtml_Product_Core_Grid extends Mage_Adminhtml_
         $this->getMassactionBlock()->setFormFieldName('product');
 
         $this->getMassactionBlock()->addItem('assign', array(
-            'label'=> Mage::helper('catalog')->__('Assign Org'),
+            'label'=> Mage::helper('catalog')->__('Add Last Min. Shopping List'),
             'url'  => $this->getUrl('*/*/massAssign')
-        ));
+            )
+        );
 
         return $this;
     }
 
+    public function getGridUrl()
+    {
+        return $this->getUrl('*/*/index', array('_current'=>true));
+    }
 
 }

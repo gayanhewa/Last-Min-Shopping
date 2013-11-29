@@ -15,7 +15,7 @@ class Magelk_Finalshop_Block_Adminhtml_Product extends Mage_Adminhtml_Block_Widg
         // ie. foo_bar/adminhtml_baz
         $this->_blockGroup = 'magelk_finalshop';
         $this->_controller = 'adminhtml_product';
-        $this->_headerText = $this->__('Select Finalshopping products');
+        $this->_headerText = $this->__('Last Min. Shopper Products');
 
         parent::__construct();
        // $this->_removeButton('add');
@@ -23,6 +23,6 @@ class Magelk_Finalshop_Block_Adminhtml_Product extends Mage_Adminhtml_Block_Widg
 
     protected function getAddUrl()
     {
-        return $this->getUrl('*/core');
+        return "http://google.ie";
     }
 }

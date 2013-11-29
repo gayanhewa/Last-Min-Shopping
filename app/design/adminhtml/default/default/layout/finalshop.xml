@@ -7,4 +7,10 @@
             <block type="magelk_finalshop/adminhtml_product" name="finalshop.product.grid"/>
         </reference>
     </finalshop_product_index>
+    <finalshop_product_new>
+        <reference name="content">
+            <!-- We also reference our block by namespacename_modulename/adminhtml_controllername, and name it uniquely -->
+            <block type="magelk_finalshop/adminhtml_product_core" name="finalshop.product.core.grid"/>
+        </reference>
+    </finalshop_product_new>
 </layout>

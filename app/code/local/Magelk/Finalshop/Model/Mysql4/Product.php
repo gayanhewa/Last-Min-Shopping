@@ -10,6 +10,6 @@ class Magelk_Finalshop_Model_Mysql4_Product extends Mage_Core_Model_Resource_Db_
 {
     protected function _construct()
     {
-        $this->_init('finalshop/product', 'entity_id');
+        $this->_init('magelk_finalshop/product', 'entity_id');
     }
 }

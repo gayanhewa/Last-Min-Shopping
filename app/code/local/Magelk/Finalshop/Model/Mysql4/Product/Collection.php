@@ -10,6 +10,6 @@ class Magelk_Finalshop_Model_Mysql4_Product_Collection extends Mage_Core_Model_R
 {
     protected  function _construct()
     {
-        $this->_init('finalshop/product');
+        $this->_init('magelk_finalshop/product');
     }
 }
