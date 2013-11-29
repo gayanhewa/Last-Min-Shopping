@@ -51,7 +51,7 @@
         <layout>
             <updates>
                 <magelk_finalshop>
-                    <file>magelk_finalshop.xml</file>
+                    <file>finalshop.xml</file>
                 </magelk_finalshop>
             </updates>
         </layout>

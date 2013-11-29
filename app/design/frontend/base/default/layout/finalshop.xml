@@ -15,4 +15,5 @@
                    template="finalshop/button.phtml"/>
         </reference>
     </checkout_onepage_review>
+
 </layout>
