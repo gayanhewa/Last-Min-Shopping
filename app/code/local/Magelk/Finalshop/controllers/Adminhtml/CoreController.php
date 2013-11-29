@@ -13,4 +13,6 @@ class Magelk_Finalshop_Adminhtml_CoreController extends Mage_Adminhtml_Controlle
         $this->loadLayout();
         $this->renderLayout();
     }
+
+
 }
